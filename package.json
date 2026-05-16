@@ -1,0 +1,11 @@
+{
+  "name": "missed-connections-aws-mock",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-episodes.mjs"
+  },
+  "devDependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}

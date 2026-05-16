@@ -1,0 +1,80 @@
+# Newest episodes first (same order as the site).
+# After editing, run: npm run build  (writes data/episodes.json)
+
+- ep: "21"
+  date: "May 2, 2026"
+  title: "feat. Mark Svenvold & Ted Sabety aka Xn0rml"
+  description: >-
+    The minds behind <em>You, Me and the Algorithmic</em> — an album that stitches trip-hop beats to Euro-disco,
+    Appalachian preacher cadences to punk guitar, and spoken-word poems sampled back into themselves, all run through
+    analog modular synths and samplers that still take 3.5" floppies. We're playing music from the new album, songs that
+    influenced its development, and maybe a few other original works.
+  tags:
+    - Trip-Hop
+    - Experimental
+    - Spoken Word
+    - Guest
+  url: "https://www.mixcloud.com/MissedConnectionsPDX/missed-connections-episode-21-feat-mark-svenvold-and-ted-sabety-aka-xn0rml/"
+
+- ep: "20"
+  date: "April 18, 2026"
+  title: "All Vinyl Freeform 10th Anniversary Mix"
+  description: "Live from Freeform's Studio on SE Stark for their 10th anniversary doing an all vinyl set."
+  tags:
+    - "All Vinyl"
+    - Live
+    - Anniversary
+  url: "https://www.mixcloud.com/MissedConnectionsPDX/missed-connections-episode-20-all-vinyl-freeform-10th-anniversary-mix/"
+
+- ep: "19"
+  date: "April 4, 2026"
+  title: "Oliver Cheatham → Cuban Percussion → MF DOOM → Robin Williams"
+  description: "Drawing lines from Oliver Cheatham to Cuban percussion to MF DOOM to Robin Williams rapping on the FernGully soundtrack, which somehow makes sense when you hear it."
+  tags: [Freeform, Deep Cuts]
+  url: "https://www.mixcloud.com/MissedConnectionsPDX/missed-connections-episode-19/"
+
+- ep: "18"
+  date: "March 24, 2026"
+  title: "feat. Don Haugen, Scot Jenerik, Austin Rich & Aurora Josephson"
+  description: "Joined by musicians performing at the Portland Arts Collective: Don Haugen, Scot Jenerik, Austin Rich, and Aurora Josephson. Two hours of experimental music."
+  tags: [Experimental, Guest, Live]
+  url: "https://www.mixcloud.com/MissedConnectionsPDX/missed-connections-episode-18-feat-don-haugen-scot-jenerik-austin-rich-and-aurora-josephson/"
+
+- ep: "17"
+  date: "March 10, 2026"
+  title: "feat. Sean Russell Hallowell aka Isorhythmics"
+  description: >-
+    Joined by composer, video artist, teacher and all around modern renaissance man Sean Russell Hallowell aka Isorhythmics.
+    New album <em>Delicate Citadel</em> — we'll play some tracks, talk influences, and dive into some medieval chamber music.
+  tags: [Composition, Medieval, Guest]
+  url: "https://www.mixcloud.com/MissedConnectionsPDX/missed-connections-episode-17-feat-sean-russell-hallowell/"
+
+- ep: "Special"
+  date: ""
+  title: "CG+E w/ Big Montana: Nom de Plumes, Alter Egos & Side Projects"
+  description: "A one-off special featuring our good friend Big Montana, covering pen names, pseudonyms, alter egos, spinoffs, side projects... whatever you want to call the sounds that musicians make behind the veil of another name."
+  tags: [Special, Guest]
+  url: "https://www.mixcloud.com/MissedConnectionsPDX/cge-wbig-montana-present-nom-de-plumes-alter-egos-and-side-projects/"
+
+- ep: "16"
+  date: "Feb 10, 2026"
+  title: "feat. Andres Botero"
+  description: "A special guest all the way from Vancouver, BC — photographer and zine creator Andres Botero takes us on a journey through the Vancouver electronic music scene."
+  tags: [Electronic, Vancouver, Guest]
+  url: "https://www.mixcloud.com/MissedConnectionsPDX/missed-connections-episode-16-feat-andres-botero/"
+
+- ep: "15"
+  date: "Jan 27, 2026"
+  title: "We Forgot to Write a Description"
+  description: "We forgot to write a description for this one, so you'll just have to trust us."
+  tags:
+    - Mystery
+    - "Trust Us"
+  url: "https://www.mixcloud.com/MissedConnectionsPDX/missed-connections-episode-15/"
+
+- ep: "14"
+  date: "Jan 13, 2026"
+  title: "It's All About Madonna... I Think... Mostly?"
+  description: "This week it's all about Madonna... I think... mostly?"
+  tags: [Madonna, Pop, Maybe]
+  url: "https://www.mixcloud.com/MissedConnectionsPDX/missed-connections-episode-14/"
