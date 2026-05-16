@@ -105,20 +105,6 @@ async function loadEpisodes() {
 const PAGE_SIZE = 7;
 let showing = PAGE_SIZE;
 
-/** Match css/site.css .shows-grid breakpoints so row padding matches real layout. */
-function getShowsGridColumns() {
-  const w = window.innerWidth;
-  if (w <= 700) return 1;
-  if (w <= 860) return 2;
-  if (w <= 1100) return 3;
-  return 4;
-}
-
-/** Featured card spans 2 columns except single-column layout. */
-function getFeaturedColumnSpan(cols) {
-  return cols <= 1 ? 1 : 2;
-}
-
 function renderCard(ep, index) {
   const isFeatured = index === 0;
   const epLabel = ep.ep === "Special" ? "Special" : `Ep. ${ep.ep}`;
@@ -142,19 +128,8 @@ function renderCard(ep, index) {
 function renderShows() {
   const total = EPISODES.length;
   const visible = EPISODES.slice(0, showing);
-  const cols = getShowsGridColumns();
-  const featuredSpan = getFeaturedColumnSpan(cols);
-  const usedSlots =
-    visible.length > 0 ? featuredSpan + (visible.length - 1) : 0;
-  const remainder = usedSlots % cols;
-  const placeholders = remainder === 0 ? 0 : cols - remainder;
-  const placeholderHTML = Array(placeholders)
-    .fill(
-      '<div class="show-card show-card-placeholder" aria-hidden="true"></div>'
-    )
-    .join("");
   document.getElementById("showsGrid").innerHTML =
-    visible.map(renderCard).join("") + placeholderHTML;
+    visible.map(renderCard).join("");
   document.getElementById("archiveStatus").textContent =
     `Showing ${Math.min(showing, total)} of ${total} episodes`;
   const row = document.getElementById("loadMoreRow");
@@ -165,7 +140,7 @@ function renderShows() {
 }
 
 function loadMore() {
-  showing = showing >= EPISODES.length ? PAGE_SIZE : showing + PAGE_SIZE;
+  showing = showing >= EPISODES.length ? PAGE_SIZE : EPISODES.length;
   renderShows();
 }
 
@@ -202,12 +177,6 @@ async function start() {
   }
   renderShows();
   initPlayer();
-
-  let resizeT;
-  window.addEventListener("resize", () => {
-    clearTimeout(resizeT);
-    resizeT = setTimeout(() => renderShows(), 150);
-  });
 }
 
 start();
