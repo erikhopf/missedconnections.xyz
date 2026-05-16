@@ -1,1 +1,17 @@
-./.DS_Store
+# Environment variables (contains secrets)
+.env
+.env.*
+!.env.example
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Node
+node_modules/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
