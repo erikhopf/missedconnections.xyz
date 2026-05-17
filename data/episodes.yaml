@@ -1,6 +1,18 @@
 # Newest episodes first (same order as the site).
 # After editing, run: npm run build  (writes data/episodes.json)
 
+- ep: "22"
+  date: "May 16, 2026"
+  title: "Come On Baby Light My Fire"
+  description: "Why are covers of \"Light My Fire\" so good? Why is there a cover in almost every genre?"
+  tags:
+    - James Bond Covers
+    - UK House
+    - Stax Records
+    - Balaeric(ish)
+  url: "https://www.mixcloud.com/MissedConnectionsPDX/missed-connections-episode-22/"
+
+
 - ep: "21"
   date: "May 2, 2026"
   title: "feat. Mark Svenvold & Ted Sabety aka Xn0rml"
