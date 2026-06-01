@@ -1,6 +1,18 @@
 # Newest episodes first (same order as the site).
 # After editing, run: npm run build  (writes data/episodes.json)
 
+- ep: "23"
+  date: "May 30, 2026"
+  title: "Broadway is Byrning"
+  description: "Making our way from George Benson to Larry David's rendition of \"Leo and Max\" and nearly wrapping things up with General Public. The only way to see how this episode twists and turns is to let it rip."
+  tags:
+    - Late Night
+    - Broadway
+    - 1980s
+    - David Byrne(ish)
+  url: "https://www.mixcloud.com/MissedConnectionsPDX/missed-connections-episode-23/"
+
+
 - ep: "22"
   date: "May 16, 2026"
   title: "Come On Baby Light My Fire"
