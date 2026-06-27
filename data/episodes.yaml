@@ -1,6 +1,18 @@
 # Newest episodes first (same order as the site).
 # After editing, run: npm run build  (writes data/episodes.json)
 
+- ep: "24"
+  date: "June 13, 2026"
+  title: "Around the World"
+  description: "A curated collection of music that we've picked up in our travels."
+  tags:
+    - Post-punk
+    - Electro
+    - Jazz
+    - Hiphop
+    - Gothwave
+  url: "https://www.mixcloud.com/MissedConnectionsPDX/missed-connections-episode-24/"
+
 - ep: "23"
   date: "May 30, 2026"
   title: "Broadway is Byrning"
