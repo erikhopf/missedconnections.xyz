@@ -137,6 +137,8 @@
     .countdown-unit{text-align:center;}
     .countdown-num{font-family:'VT323',monospace;font-size:2.2rem;line-height:1;display:block;color:var(--riso-black);}
     .countdown-lbl{font-size:.55rem;letter-spacing:.2em;text-transform:uppercase;color:#444;}
+    .on-air-link{display:none;font-family:'VT323',monospace;font-size:2.2rem;line-height:1;color:var(--riso-black);text-decoration:none;margin-top:14px;letter-spacing:.05em;}
+    .on-air-link:hover{text-decoration:underline;}
 
     .zigzag-border{height:12px;background:repeating-linear-gradient(-45deg,var(--riso-black) 0,var(--riso-black) 4px,transparent 4px,transparent 8px);}
 

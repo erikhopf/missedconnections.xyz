@@ -14,13 +14,26 @@ menuOverlay.addEventListener("click", (e) => {
 });
 
 // ── Next Show Date Logic ──
-function getNextShowDate() {
+const SHOW_DURATION_MS = 2 * 60 * 60 * 1000;
+
+function getShowState() {
   const anchor = new Date(Date.UTC(2026, 4, 17, 3, 0, 0));
   const now = new Date();
-  if (now < anchor) return anchor;
   const ms14 = 14 * 24 * 60 * 60 * 1000;
-  const periods = Math.ceil((now - anchor) / ms14);
-  return new Date(anchor.getTime() + periods * ms14);
+
+  if (now < anchor) {
+    return { state: "countdown", showDate: anchor };
+  }
+
+  const periodIndex = Math.floor((now - anchor) / ms14);
+  const currentShowStart = new Date(anchor.getTime() + periodIndex * ms14);
+  const currentShowEnd = new Date(currentShowStart.getTime() + SHOW_DURATION_MS);
+  const nextShowStart = new Date(anchor.getTime() + (periodIndex + 1) * ms14);
+
+  if (now < currentShowEnd) {
+    return { state: "live", showDate: currentShowStart };
+  }
+  return { state: "countdown", showDate: nextShowStart };
 }
 
 function formatShowDate(d) {
@@ -34,18 +47,25 @@ function formatShowDate(d) {
 }
 
 function updateCountdown() {
-  const next = getNextShowDate();
-  document.getElementById("nextShowDate").textContent = formatShowDate(next);
+  const { state, showDate } = getShowState();
+  const label = document.getElementById("nextBroadcastLabel");
+  const countdownRow = document.getElementById("countdownRow");
+  const onAirLink = document.getElementById("onAirLink");
 
-  const now = new Date();
-  const diff = next - now;
+  document.getElementById("nextShowDate").textContent = formatShowDate(showDate);
 
-  if (diff <= 0) {
-    ["cdDays", "cdHours", "cdMins", "cdSecs"].forEach((id, i) => {
-      document.getElementById(id).textContent = ["ON", "AIR", "NOW", "!!"][i];
-    });
+  if (state === "live") {
+    label.textContent = "On Air";
+    countdownRow.style.display = "none";
+    onAirLink.style.display = "block";
     return;
   }
+
+  label.textContent = "Next Broadcast";
+  countdownRow.style.display = "flex";
+  onAirLink.style.display = "none";
+
+  const diff = showDate - new Date();
   const d = Math.floor(diff / 86400000);
   const h = Math.floor((diff % 86400000) / 3600000);
   const m = Math.floor((diff % 3600000) / 60000);
@@ -60,12 +80,15 @@ updateCountdown();
 setInterval(updateCountdown, 1000);
 
 // ── Marquee (includes next show date) ──
-const nextDate = getNextShowDate();
-const nextLabel = nextDate.toLocaleDateString("en-US", {
-  month: "short",
-  day: "numeric",
-  timeZone: "America/Los_Angeles",
-});
+const { state: marqueeState, showDate: marqueeShowDate } = getShowState();
+const nextLabel = marqueeState === "live"
+  ? "On Air Now!"
+  : marqueeShowDate.toLocaleDateString("en-US", {
+      month: "short",
+      day: "numeric",
+      timeZone: "America/Los_Angeles",
+    });
+const marqueeNextItem = marqueeState === "live" ? nextLabel : `Next Show: ${nextLabel}`;
 const items = [
   "Missed Connections",
   "///",
@@ -75,7 +98,7 @@ const items = [
   "///",
   "Every Other Saturday · 8–10 PM PT",
   "///",
-  `Next Show: ${nextLabel}`,
+  marqueeNextItem,
   "///",
   "CG + E",
   "///",
