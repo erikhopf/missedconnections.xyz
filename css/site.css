@@ -118,7 +118,6 @@
     .player-panel iframe{
       border:2px solid var(--riso-black);
       display:block;
-      filter:invert(1) hue-rotate(180deg);
     }
 
     /* HERO RIGHT */
