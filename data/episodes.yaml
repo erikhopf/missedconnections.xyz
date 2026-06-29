@@ -1,5 +1,16 @@
 # Newest episodes first (same order as the site).
 # After editing, run: npm run build  (writes data/episodes.json)
+- ep: "25"
+  date: "June 27, 2026"
+  title: "From Behind the Lens"
+  description: "A quick history lap of design agencies, photographers, documentarians, and cultural historians who've shaped the music we listen to from behind the lens of a camera."
+  tags:
+    - Punk 
+    - Post-punk
+    - Hiphop
+    - Skate
+    - Design
+  url: "https://www.mixcloud.com/MissedConnectionsPDX/missed-connections-episode-25/"
 
 - ep: "24"
   date: "June 13, 2026"
