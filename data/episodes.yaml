@@ -1,6 +1,18 @@
 # Newest episodes first (same order as the site).
 # After editing, run: npm run build  (writes data/episodes.json)
 
+- ep: "27"
+  date: "July 25, 2026"
+  title: "Strut, Accidental, Brownswood"
+  description: "What started with Matthew Herbert and Momoko Gill turned into an episode about three UK-based record labels putting out everything from classic funk and rare groove reprints to experimental noise and hip hop to the musings of the one and only Giles Peterson."
+  tags:
+    - Downtempo
+    - Electro
+    - Acid Jazz
+    - Hip Hop
+
+  url: "https://www.mixcloud.com/MissedConnectionsPDX/missed-connections-episode-27/"
+
 - ep: "26"
   date: "July 11, 2026"
   title: "World Cup Special"
