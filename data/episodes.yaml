@@ -1,6 +1,29 @@
 # Newest episodes first (same order as the site).
 # After editing, run: npm run build  (writes data/episodes.json)
 
+- ep: "Special"
+  date: "August 17, 2026"
+  title: "The Void (w/Sublime Waves)"
+  description: "Had a chance to hit the Freeform Studio for an all vinyl set with Sublime Waves to cover \"The Void\". Shout out to Easily Amused for letting us use his slot to send some soulful sounds into the ether."
+  tags:
+    - R&B
+    - Soul Jazz
+    - Hip Hop
+
+  url: "https://www.mixcloud.com/MissedConnectionsPDX/the-void-17-aug-w-e-and-sublime-waves/"
+
+- ep: "28"
+  date: "August 8, 2026"
+  title: "Groundhog Day"
+  description: "The same songs, just slightly different, over and over and over again. Expect covers, samples, interpretations, interporlations, and parodies."
+  tags:
+    - Soul
+    - Disco
+    - Hip Hop
+    - Rock
+
+  url: "https://www.mixcloud.com/MissedConnectionsPDX/missed-connections-episode-28/"
+
 - ep: "27"
   date: "July 25, 2026"
   title: "Strut, Accidental, Brownswood"
@@ -13,7 +36,7 @@
 
   url: "https://www.mixcloud.com/MissedConnectionsPDX/missed-connections-episode-27/"
 
-- ep: "Guesting"
+- ep: "Special"
   date: "July 24, 2026"
   title: "Extra Butter"
   description: "Got the invite from Sublime Waves to come spin records during his show Butter with a few other Freeform DJs: Major Mel and DJ Kelly C. Four hours of groove pockets and music for the soul. If the summer doesn't have you hot, these tracks will."
