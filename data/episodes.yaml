@@ -1,6 +1,17 @@
 # Newest episodes first (same order as the site).
 # After editing, run: npm run build  (writes data/episodes.json)
 
+- ep: "Special"
+  date: "September 27, 2026"
+  title: "Guitar Shop Radio"
+  description: "Caught up with Sublime Waves in the Freeform Portland studios to cover for Victrola's Guitar Shop Radio this past Sunday. Lots of good stuff crammed into this two hour block. Even a quick appearance from Jazzbot."
+  tags:
+    - Rock
+    - Proto Punk
+    - R&B 
+
+  url: "https://www.mixcloud.com/MissedConnectionsPDX/guitar-shop-radio-sept-27-2026/"
+
 - ep: "31"
   date: "September 19, 2026"
   title: "Despacio"
