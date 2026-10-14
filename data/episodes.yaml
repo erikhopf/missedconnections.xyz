@@ -1,6 +1,16 @@
 # Newest episodes first (same order as the site).
 # After editing, run: npm run build  (writes data/episodes.json)
 
+- ep: "32"
+  date: "September 27, 2026"
+  title: "The Soulwax Episode"
+  description: "Following up from the Despacio episode, we're taking a deep dive into the ever-varied productions of David and Stephen Dewaele."
+  tags:
+    - Remixes
+    - Soulwax Stuff
+
+  url: "https://www.mixcloud.com/MissedConnectionsPDX/missed-connections-episode-32/"
+
 - ep: "Special"
   date: "September 27, 2026"
   title: "Guitar Shop Radio"
